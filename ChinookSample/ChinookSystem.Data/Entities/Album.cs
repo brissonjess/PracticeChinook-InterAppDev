@@ -40,11 +40,9 @@ namespace ChinookSystem.Data.Entities
         //1. properties to point to children use ICollection<Type>
         //2. properties that point to parent ParentName as the data type
 
-        // example that points to parent:
         public virtual ICollection<Track> Tracks { get; set; }
 
-        //example that points to children:
-        public virtual Artist Artists { get; set; }
+        public virtual Artist Artist { get; set; }
 
     }
 }
