@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
     <h1>Entity vs Linq Entity Query</h1>
     <h3>Dump the entire contents of a table from the DB</h3>
-    <asp:GridView ID="EntityFramworkList" runat="server" AutoGenerateColumns="False" DataSourceID="EntityFrameworkODS" AllowPaging="True">
+    <asp:GridView ID="EntityFrameworkList" runat="server" AutoGenerateColumns="False" DataSourceID="EntityFrameworkODS" AllowPaging="True">
         <Columns>
             <asp:BoundField DataField="ArtistId" HeaderText="ArtistId" SortExpression="ArtistId"></asp:BoundField>
             <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name"></asp:BoundField>

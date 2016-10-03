@@ -89,6 +89,7 @@
                             <asp:MenuItem text="Home" NavigateUrl="~/"></asp:MenuItem>
                             <asp:MenuItem text="Queries" Value="dropdown">
                                 <asp:MenuItem Text="First Sample" NavigateUrl="~/Queries/FirstSample"></asp:MenuItem>
+                                <asp:MenuItem Text="First Sample" NavigateUrl="~/Queries/RepresentitiveCustomers"></asp:MenuItem>
                                 <%--<asp:MenuItem Text="Page2" NavigateUrl="~/morePages/Page2"></asp:MenuItem>--%>
                             </asp:MenuItem>
                             <asp:MenuItem text="About" NavigateUrl="~/About"></asp:MenuItem>

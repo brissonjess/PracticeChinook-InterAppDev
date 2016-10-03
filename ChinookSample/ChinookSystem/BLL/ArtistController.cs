@@ -58,13 +58,13 @@ namespace ChinookSystem.BLL
                     //in this case your had to change Artist to Artists
                 var results = from x in context.Albums
                               where x.ReleaseYear == 2008
-                              orderby x.Artists.Name, x.Title
+                              orderby x.Artist.Name, x.Title
                               //the data type that you write here will the 
                                 //match the list data type in the public class definition
                               select new ArtistAlbums
                               {
                                   //Name and title are POCO class property names
-                                  Name = x.Artists.Name,
+                                  Name = x.Artist.Name,
                                   Title = x.Title
                               };
                 //the following requires the query data in memory which is:

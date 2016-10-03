@@ -32,6 +32,7 @@ namespace ChinookSystem.Data.Entities
         public string Email { get; set; }
         public int? SupportRedId { get; set; }
 
+        //ICollection is pointing to a collection of children
         public virtual ICollection<Customer> Customers { get; set; }
     }
 }

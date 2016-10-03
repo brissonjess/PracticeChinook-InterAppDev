@@ -27,8 +27,10 @@ namespace ChinookSystem.Data.Entities
         public string Phone { get; set; }
         public string Fax { get; set; }
         public string Email { get; set; }
-        public int? SupportRedId { get; set; }
+        [ForeignKey("Employee")]
+        public int? SupportRepId { get; set; }
 
+        //this is point to the parent
         public virtual Employee Employee { get; set; }
     }
 }
