@@ -3,6 +3,9 @@ using Microsoft.Owin.Security;
 using System;
 using System.Web;
 using Website;
+#region Additional namespaces for Security
+using ChinookSystem.Security; //this handles the ApplicationUser, AppllicationDbContext, UserManager
+#endregion
 
 public partial class Account_RegisterExternalLogin : System.Web.UI.Page
 {

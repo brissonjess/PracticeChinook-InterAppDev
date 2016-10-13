@@ -3,6 +3,9 @@ using System;
 using System.Linq;
 using System.Web.UI;
 using Website;
+#region Additional namespaces for Security
+using ChinookSystem.Security; //this handles the ApplicationUser, AppllicationDbContext, UserManager
+#endregion
 
 public partial class Account_Register : Page
 {

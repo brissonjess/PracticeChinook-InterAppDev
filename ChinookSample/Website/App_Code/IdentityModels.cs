@@ -5,31 +5,36 @@ using System.Web;
 using System;
 using Website;
 
-namespace Website
-{
-    // You can add User data for the user by adding more properties to your User class, please visit http://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
-    public class ApplicationUser : IdentityUser
-    {
-    }
+#region Additional namespaces for Security
+using ChinookSystem.Security; //this handles the ApplicationUser, AppllicationDbContext, UserManager
+#endregion
 
-    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
-    {
-        public ApplicationDbContext()
-            : base("DefaultConnection")
-        {
-        }
-    }
+//namespace Website
+//{
+//    // You can add User data for the user by adding more properties to your User class, please visit http://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
+//    public class ApplicationUser : IdentityUser
+//    {
+//    }
 
-    #region Helpers
-    public class UserManager : UserManager<ApplicationUser>
-    {
-        public UserManager()
-            : base(new UserStore<ApplicationUser>(new ApplicationDbContext()))
-        {
-        }
-    }
-}
+//    //pass the connection string to the DbContext using :base()
+//    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
+//    {
+//        public ApplicationDbContext()
+//            : base("DefaultConnection")
+//        {
+//        }
+//    }
 
+
+//    public class UserManager : UserManager<ApplicationUser>
+//    {
+//        public UserManager()
+//            : base(new UserStore<ApplicationUser>(new ApplicationDbContext()))
+//        {
+//        }
+//    }
+//}
+#region Helpers
 namespace Website
 {
     public static class IdentityHelper
